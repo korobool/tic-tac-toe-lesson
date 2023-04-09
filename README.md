@@ -1,6 +1,7 @@
 # Крестики нолики
   
 ```
+This repo was created for my daughter Katherine in order to help her in learning python and basics of game development
 Этот репозиторий сделан для моей дочери Кати, чтобы она училась программировать игры на Python
 ```
 
