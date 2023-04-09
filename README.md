@@ -1,8 +1,11 @@
 # Крестики нолики
   
 ```
-This repo was created for my daughter Katherine in order to help her in learning python and basics of game development
+This repo was created for my daughter Katherine in order to help her in learning python 
+and basics of game development
+it is in Russian, because it's still her naive language
 Этот репозиторий сделан для моей дочери Кати, чтобы она училась программировать игры на Python
+Он на русском, потому что он для нее пока-что основной.
 ```
 
 План урока для вводного курса по созданию игры "Крестики-нолики" с использованием Pygame
