@@ -8,6 +8,8 @@ it is in Russian, because it's still her naive language
 Он на русском, потому что он для нее пока-что основной.
 ```
 
+![heager.png](images/header.png)
+
 ### План урока для вводного курса по созданию игры "Крестики-нолики" с использованием Pygame
 #### 1. Введение в Pygame
    * Объяснить основы Pygame
