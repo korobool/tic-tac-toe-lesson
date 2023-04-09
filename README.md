@@ -1,4 +1,4 @@
-﻿Крестики нолики
+# Крестики нолики
   
 
 
@@ -59,12 +59,8 @@
 
 Реализация:
 
-
-
-
-
-
-	import pygame
+```
+import pygame
 import sys
 
 
@@ -194,8 +190,8 @@ def main():
 
 if __name__ == "__main__":
     main()
-	
-
+```	
+```
 
 
 А теперь, подробнее:
@@ -212,14 +208,8 @@ Pygame использует модульный подход, поэтому вы
 
 
 
-
-
-
-
-
-	import pygame
-
-
+```
+import pygame
 # Инициализация Pygame
 pygame.init()
 
@@ -248,7 +238,7 @@ while running:
 
 # Завершение работы с Pygame
 pygame.quit()
-	
+```	
 
 2. Настройка окна игры
 Теперь, когда мы знакомы с основами работы с Pygame, давайте создадим окно для игры "Крестики-нолики". В этом разделе мы настроим окно игры, зададим его размер и установим подходящий заголовок.
@@ -264,12 +254,8 @@ pygame.quit()
 
 
 
-
-
-
-	import pygame
-
-
+```
+import pygame
 # Инициализация Pygame
 pygame.init()
 
@@ -298,7 +284,7 @@ while running:
 
 # Завершение работы с Pygame
 pygame.quit()
-	
+```	
 
 
 
@@ -317,8 +303,8 @@ pygame.quit()
 
 
 
-
-	import pygame
+```
+import pygame
 
 
 def draw_grid(screen, width, height):
@@ -368,7 +354,7 @@ while running:
 
 # Завершение работы с Pygame
 pygame.quit()
-	
+```
 
 
 
@@ -387,8 +373,8 @@ Pygame предоставляет события для отслеживания
 
 
 
-
-	import pygame
+```
+import pygame
 
 
 def get_grid_cell(screen_width, screen_height, mouse_x, mouse_y):
@@ -437,11 +423,12 @@ while running:
 
     # Обновление экрана
     pygame.display.flip()
-
+```
 
 # Завершение работы с Pygame
+
 pygame.quit()
-	
+```	
 
 
 
@@ -461,7 +448,8 @@ pygame.quit()
 
 
 
-	import pygame
+```
+import pygame
 
 
 # Загрузка изображений крестика и нолика
@@ -509,16 +497,9 @@ while running:
     draw_grid(screen, screen_width, screen_height)
     draw_board(screen, game_board, screen_width, screen_height)
 
-
 # Обновление Экрана
 pygame.display.flip()
-
-
-
-
-	
-
-
+```
 
 Этот код добавляет функциональность для отображения крестиков и ноликов на игровом поле. Теперь при каждом клике мыши в ячейке сетки будет отображаться соответствующий символ, и текущий игрок будет меняться после каждого хода.
 
@@ -534,10 +515,8 @@ pygame.display.flip()
 
 
 
-
-
-
-	def check_winner(board):
+```
+def check_winner(board):
     for row in range(3):
         if board[row][0] == board[row][1] == board[row][2] and board[row][0] is not None:
             return board[row][0], [(row, 0), (row, 1), (row, 2)]
@@ -590,10 +569,9 @@ while running:
 
     # Обновление экрана
     pygame.display.flip()
-
-
 # Завершение работы с Pygame
 pygame.quit()
+```
 	
 
 
@@ -619,11 +597,8 @@ pygame.quit()
 Сниппет кода для загрузки и масштабирования иконок:
 
 
-
-
-
-
-	import pygame
+```
+import pygame
 
 
 # Load assets
@@ -635,7 +610,7 @@ o_icon = pygame.image.load('o_icon.png')
 ICON_SIZE = 80
 x_icon = pygame.transform.scale(x_icon, (ICON_SIZE, ICON_SIZE))
 o_icon = pygame.transform.scale(o_icon, (ICON_SIZE, ICON_SIZE))
-	
+```	
 
 * Отображение иконок X и O на игровом поле
 Для отображения иконок X и O на игровом поле мы используем функцию screen.blit(), которая копирует содержимое одного изображения на другое.
@@ -643,8 +618,8 @@ o_icon = pygame.transform.scale(o_icon, (ICON_SIZE, ICON_SIZE))
 
 
 
-
-	# Draw icons
+```
+# Draw icons
 for i in range(3):
     for j in range(3):
         x = j * (SCREEN_WIDTH // 3) + (SCREEN_WIDTH // 6) - (ICON_SIZE // 2)
@@ -654,7 +629,7 @@ for i in range(3):
         elif board[i][j] == 'O':
             screen.blit(o_icon, (x, y))
 	
-
+```
 
 
 Теперь, когда вы запустите игру, на игровом поле будут отображаться ваши иконки крестика и нолика, созданные с помощью GIMP.
@@ -666,32 +641,22 @@ for i in range(3):
 Создадим функцию highlight_cells(), которая принимает список координат выигрышных ячеек и рисует прямоугольники вокруг соответствующих иконок X или O.
 Сниппет кода для функции выделения выигрышных ячеек:
 
-
-
-
-	def highlight_cells(cells):
+```
+def highlight_cells(cells):
     for i, j in cells:
         x = j * (SCREEN_WIDTH // 3) + (SCREEN_WIDTH // 6) - (ICON_SIZE // 2)
         y = i * (SCREEN_HEIGHT // 3) + (SCREEN_HEIGHT // 6) - (ICON_SIZE // 2)
         pygame.draw.rect(screen, GREEN, (x - HIGHLIGHT_WIDTH // 2, y - HIGHLIGHT_WIDTH // 2, ICON_SIZE + HIGHLIGHT_WIDTH, ICON_SIZE + HIGHLIGHT_WIDTH), HIGHLIGHT_WIDTH)
-	
+```	
 
 * Выделение выигрышных ячеек в основном цикле игры
 В основном цикле игры, после завершения игры, вызовите функцию highlight_cells() с координатами выигрышных ячеек.
 Сниппет кода для выделения выигрышных ячеек в основном цикле игры:
+
+```
 if game_over:
     highlight_cells(winning_cells)
-
-
-
-
-
-
-	if game_over:
-    highlight_cells(winning_cells)
-	
-
-
+```
 
 Теперь при завершении игры выигрышные ячейки будут выделены зелеными прямоугольниками вокруг иконок X или O.
 9. Основной игровой цикл
@@ -702,8 +667,8 @@ if game_over:
 
 
 
-
-	running = True
+```
+running = True
 game_over = False
 while running:
     # Обработка событий
@@ -741,7 +706,7 @@ while running:
 
     # Обновление дисплея
     pygame.display.flip()
-	
+```	
 
 
 
