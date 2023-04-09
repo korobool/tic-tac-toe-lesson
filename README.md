@@ -7,7 +7,7 @@ You have some errors, warnings, or alerts. If you are using reckless mode, turn 
 * WARNINGs: 0
 * ALERTS: 3
 
-Conversion time: 3.658 seconds.
+Conversion time: 4.247 seconds.
 
 
 Using this Markdown file:
@@ -20,7 +20,7 @@ Using this Markdown file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β34
-* Sun Apr 09 2023 07:30:43 GMT-0700 (PDT)
+* Sun Apr 09 2023 07:33:43 GMT-0700 (PDT)
 * Source doc: Крестики-нолики
 * Tables are currently converted to HTML tables.
 * This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
