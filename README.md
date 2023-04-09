@@ -192,8 +192,6 @@ if __name__ == "__main__":
     main()
 ```	
 
-
-
 А теперь, подробнее:
 
 
@@ -388,15 +386,12 @@ def get_grid_cell(screen_width, screen_height, mouse_x, mouse_y):
 
     return row, col
 
-
 # Инициализация Pygame
 pygame.init()
-
 
 # Задаем размеры окна
 screen_width = 300
 screen_height = 300
-
 
 # Создание окна игры
 screen = pygame.display.set_mode((screen_width, screen_height))
@@ -423,7 +418,6 @@ while running:
 
     # Обновление экрана
     pygame.display.flip()
-```
 
 # Завершение работы с Pygame
 
