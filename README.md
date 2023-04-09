@@ -59,7 +59,7 @@
 
 Реализация:
 
-```
+```python
 import pygame
 import sys
 
