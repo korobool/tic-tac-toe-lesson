@@ -206,7 +206,7 @@ Pygame использует модульный подход, поэтому вы
 
 
 
-```
+```python
 import pygame
 # Инициализация Pygame
 pygame.init()
@@ -252,7 +252,7 @@ pygame.quit()
 
 
 
-```
+```python
 import pygame
 # Инициализация Pygame
 pygame.init()
@@ -301,7 +301,7 @@ pygame.quit()
 
 
 
-```
+```python
 import pygame
 
 
@@ -371,7 +371,7 @@ Pygame предоставляет события для отслеживания
 
 
 
-```
+```python
 import pygame
 
 
@@ -442,7 +442,7 @@ pygame.quit()
 
 
 
-```
+```python
 import pygame
 
 
@@ -509,7 +509,7 @@ pygame.display.flip()
 
 
 
-```
+```python
 def check_winner(board):
     for row in range(3):
         if board[row][0] == board[row][1] == board[row][2] and board[row][0] is not None:
@@ -591,7 +591,7 @@ pygame.quit()
 Сниппет кода для загрузки и масштабирования иконок:
 
 
-```
+```python
 import pygame
 
 
@@ -612,7 +612,7 @@ o_icon = pygame.transform.scale(o_icon, (ICON_SIZE, ICON_SIZE))
 
 
 
-```
+```python
 # Draw icons
 for i in range(3):
     for j in range(3):
@@ -635,7 +635,7 @@ for i in range(3):
 Создадим функцию highlight_cells(), которая принимает список координат выигрышных ячеек и рисует прямоугольники вокруг соответствующих иконок X или O.
 Сниппет кода для функции выделения выигрышных ячеек:
 
-```
+```python
 def highlight_cells(cells):
     for i, j in cells:
         x = j * (SCREEN_WIDTH // 3) + (SCREEN_WIDTH // 6) - (ICON_SIZE // 2)
@@ -647,7 +647,7 @@ def highlight_cells(cells):
 В основном цикле игры, после завершения игры, вызовите функцию highlight_cells() с координатами выигрышных ячеек.
 Сниппет кода для выделения выигрышных ячеек в основном цикле игры:
 
-```
+```python
 if game_over:
     highlight_cells(winning_cells)
 ```
@@ -661,7 +661,7 @@ if game_over:
 
 
 
-```
+```python
 running = True
 game_over = False
 while running:
