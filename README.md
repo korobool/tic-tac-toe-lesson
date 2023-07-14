@@ -1,10 +1,10 @@
 # Крестики нолики
   
 ```
-This repo was created for my daughter Katherine in order to help her in learning python 
+This repo was created for kids in order to help them in learning python 
 and basics of game development
 it is in Russian, because it's still her naive language
-Этот репозиторий сделан для моей дочери Кати, чтобы она училась программировать игры на Python
+Этот репозиторий сделан для детец, чтобы они учились программировать игры на Python
 Он на русском, потому что он для нее пока-что основной.
 ```
 
