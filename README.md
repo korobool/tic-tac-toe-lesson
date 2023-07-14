@@ -3,9 +3,7 @@
 ```
 This repo was created for kids in order to help them in learning python 
 and basics of game development
-it is in Russian, because it's still her naive language
-Этот репозиторий сделан для детей, чтобы они учились программировать игры на Python
-Он на русском, потому что он для нее пока-что основной.
+Этот репозиторий сделан для детей, чтобы они учились программировать игры на Python.
 ```
 
 ![heager.png](images/header.png)
